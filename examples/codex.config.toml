@@ -1,0 +1,11 @@
+# Add to ~/.codex/config.toml
+# Export PLUIA_API_KEY in your shell first (key created in Account > API keys on pluia.fr).
+[mcp_servers.pluia]
+url = "https://pluia.fr/mcp"
+bearer_token_env_var = "PLUIA_API_KEY"
+# poser_question can take up to about 190 s; the Codex default tool timeout is 60 s.
+tool_timeout_sec = 200
+
+# Alternative without an API key: leave out bearer_token_env_var, then run
+#   codex mcp login pluia
+# to sign in with your Pluia account (OAuth).

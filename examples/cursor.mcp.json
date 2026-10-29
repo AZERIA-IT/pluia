@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "pluia": {
+      "url": "https://pluia.fr/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:PLUIA_API_KEY}"
+      }
+    }
+  }
+}
