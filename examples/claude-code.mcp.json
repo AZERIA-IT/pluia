@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pluia": {
+      "type": "http",
+      "url": "https://pluia.fr/mcp",
+      "headers": {
+        "Authorization": "Bearer ${PLUIA_API_KEY}"
+      },
+      "timeout": 200000
+    }
+  }
+}

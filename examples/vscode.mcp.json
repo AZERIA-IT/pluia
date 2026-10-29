@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "pluia-key",
+      "description": "Pluia API key (Account > API keys on pluia.fr)",
+      "password": true
+    }
+  ],
+  "servers": {
+    "pluia": {
+      "type": "http",
+      "url": "https://pluia.fr/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:pluia-key}"
+      }
+    }
+  }
+}
